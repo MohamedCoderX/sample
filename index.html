@@ -13,7 +13,7 @@
     }
 
     .container {
-      max-width: 420px;
+      max-width: 350px;
       margin: 0 auto;
       padding: 20px 15px;
     }
@@ -43,11 +43,17 @@
     }
 
     .chip {
-      width: 42px;
+      width:60px;
       height: auto;
       margin-bottom: 16px;
     }
-
+.nfc{
+  width: 40px;
+  position: relative;
+  left: 220px;
+  top: 35px;
+  filter: grayscale(100%) brightness(50%);
+}
     .card-text {
       font-size: 14px;
       margin-bottom: 5px;
@@ -55,9 +61,9 @@
     }
 
     .valid {
-      position: absolute;
-      bottom: 18px;
-      right: 20px;
+      width: max-content;
+    position: absolute;
+    right: 10px;
       font-size: 13px;
       font-weight: bold;
       text-align: right;
@@ -76,7 +82,15 @@
       font-weight: 600;
       margin-bottom: 10px;
     }
-
+.card-text-full{
+      
+     display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+      height: 100%;
+      
+}
     .fund-icon {
       font-size: 26px;
       margin-bottom: 8px;
@@ -93,7 +107,12 @@
       margin-top: 5px;
       color: #444;
     }
-
+.logo{
+width: 60px;
+position: relative;
+left: 150px;
+top: -20px;
+}
     .footer {
       margin-top: 30px;
       font-size: 12px;
@@ -108,10 +127,14 @@
     <div class="subtext">Here's what's happening with your account today.</div>
 
     <div class="card">
-      <img src="chip.webp" alt="chip" class="chip" />
-      <div class="card-text">ABDUL RAHMAN BADUSHA</div>
-      <div class="card-text">ID - XEH00041</div>
-      <div class="valid">VALID THRU<br/>12/29</div>
+      <img src="chip.png" alt="chip" class="chip" />
+      <img src="nfc.png" alt="" class="nfc">
+      <img src="logo.png" alt="" class="logo">
+      <div class="card-text-full">
+        <div class="card-text">ABDUL RAHMAN BADUSHA</div>
+        <div class="card-text">ID - XEH00041</div>
+        <div class="valid">VALID THRU<br/>12/29</div>
+      </div>
     </div>
 
     <div class="funds-box">
